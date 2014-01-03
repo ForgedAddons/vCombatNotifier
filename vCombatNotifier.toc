@@ -1,6 +1,6 @@
 ## Interface: 50400
 ## Version: 50400.1
-## Title: |cffc7c7cfforged|rCombatNotifier
+## Title: |cffc7c7cfv|rCombatNotifier
 ## Notes: Sound notification when entering and leaving combat.
 ## Author: Drauer | github/ForgedAddons
 ## DefaultState: Enabled
