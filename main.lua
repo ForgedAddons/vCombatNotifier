@@ -1,12 +1,9 @@
-local f = CreateFrame("Frame")
-f:SetScript("OnEvent", function(self, event, ...) self[event](self, event, ...) end)
+local addon, ns = ...
 
-f:RegisterEvent"PLAYER_REGEN_DISABLED"
-f:RegisterEvent"PLAYER_REGEN_ENABLED"
+ns.RegisterEvent("PLAYER_REGEN_DISABLED", function ()
+	PlaySoundFile([=[Interface\AddOns\vCombatNotifier\sounds\combat+.mp3]=])
+end)
 
-f.PLAYER_REGEN_DISABLED = function(self, event, ...)
-	PlaySoundFile([=[Interface\AddOns\forgedCombatNotifier\sounds\combat+.mp3]=])
-end
-f.PLAYER_REGEN_ENABLED = function(self, event, ...)
-	PlaySoundFile([=[Interface\AddOns\forgedCombatNotifier\sounds\combat-.mp3]=])
-end
+ns.RegisterEvent("PLAYER_REGEN_ENABLED", function ()
+	PlaySoundFile([=[Interface\AddOns\vCombatNotifier\sounds\combat-.mp3]=])
+end)
