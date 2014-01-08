@@ -1,11 +1,11 @@
 ## Interface: 50400
-## Version: 50400.2
+## Version: 50400.3
 ## Title: |cffc7c7cfv|rCombatNotifier
 ## Notes: Sound notification when entering and leaving combat.
-## Author: Drauer | github/ForgedAddons
+## Author: Drauer
 ## DefaultState: Enabled
 ## LoadOnDemand: 0
+## X-GitHub: ForgedAddons/vCombatNotifier
 
 externals\events.lua
-
 main.lua
